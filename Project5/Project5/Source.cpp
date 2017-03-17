@@ -1,24 +1,14 @@
-#include <iostream>
+#include<iostream>
+#include<string>
 using namespace std;
-#include <ctime>
 int main() {
-	srand(time(NULL));
-	int num;
-	int num2 = 0;
-	int sum = 0;
-	for (int i = 0; i < 100; i++) {
-
-		num = rand() % 1000 + 1;
-		cout << num << endl;
-		if (num > num2) {
-			num2 = num;
-		}
-		sum = sum + num;
+	string word[6];
+	for (int i = 0; i < 6; i++) {
+		cout << "Tell me a word." << endl;
+		getline(cin, word[i]);
 	}
-	cout << endl;
-	cout << "The biggest number is " << num2 << endl;
-	cout << "The Average is " << sum / 100 << endl;
-
-
-
+	if (word[3].compare("shamrock")==0)
+		cout << "You get a pot of gold!" << endl;
+	else
+		cout << "get outa'here!" << endl;
 }
