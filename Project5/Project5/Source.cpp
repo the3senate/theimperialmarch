@@ -2,13 +2,12 @@
 #include<string>
 using namespace std;
 int main() {
-	string word[6];
-	for (int i = 0; i < 6; i++) {
-		cout << "Tell me a word." << endl;
-		getline(cin, word[i]);
-	}
-	if (word[3].compare("shamrock")==0)
-		cout << "You get a pot of gold!" << endl;
-	else
-		cout << "get outa'here!" << endl;
+	char input;
+	cout << "your ship lands on bespin and you give your passport ID card to the landing platform guard." << endl;
+	int room;
+	switch(room)
+		case1:
+	
+	
+	
 }
